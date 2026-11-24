@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Package Details | AussieWeb</title>
+  <meta name="description" content="Everything included in your AussieWeb package.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23FF6101' d='M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Fonts and colours live in their own files -->
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body data-root="" data-page="pricing">
+  <div id="site-header"></div>
+
+  <main>
+
+    <section class="page-hero" data-package-detail>
+      <div class="grid-bg"></div><div class="blob blob--orange"></div>
+      <div class="container hero-inner">
+        <nav class="breadcrumb" data-hero><a href="index.html">Home</a> / <a href="pricing.html">Pricing</a> / <span data-pkg-name></span></nav>
+        <span class="eyebrow" data-hero>Package details</span>
+        <h1 data-hero><span data-pkg-name></span> <span class="serif">package</span></h1>
+        <p class="lead" data-hero data-pkg-desc></p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:10px">
+      <div class="container pkg-layout">
+        <div>
+          <h2 style="font-size:clamp(1.8rem,3vw,2.6rem)" data-reveal>What’s <span class="serif">included</span></h2>
+          <div class="pkg-features" data-pkg-features></div>
+          <h2 style="font-size:clamp(1.8rem,3vw,2.6rem);margin-top:70px" data-reveal>Compare <span class="serif">plans</span></h2>
+          <div data-pkg-compare data-reveal></div>
+        </div>
+        <aside class="pkg-summary" data-pkg-summary></aside>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow">Other options</span><h2>Not quite <span class="serif">right?</span></h2></div></div>
+        <div class="pricing-grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr))" data-pkg-others></div>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container">
+        <div class="cta-band">
+          <div class="blob blob--orange"></div><div class="blob blob--blue"></div>
+          <span class="eyebrow">No worries, no pressure</span>
+          <h2 data-split>Ready to make your brand <span class="serif">fair dinkum</span> brilliant?</h2>
+          <p class="lead">Have a yarn with our team. We’ll come back within one business day with ideas, a timeline and a fixed quote.</p>
+          <div class="cta-actions">
+            <a href="contact.html" class="btn btn--primary btn--lg" data-magnetic>Start a project <i data-icon="arrow"></i></a>
+            <a href="pricing.html" class="btn btn--ghost btn--lg">View pricing</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/layout.js"></script>
+  <script src="js/packages.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

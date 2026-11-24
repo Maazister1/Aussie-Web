@@ -1,0 +1,43 @@
+/* =========================================================
+   AUSSIEWEB — THEME (COLOURS ONLY)
+   Change colours here and the whole site updates.
+   ========================================================= */
+:root {
+  /* Brand */
+  --c-primary: #FF6101;        /* Orange — buttons, highlights */
+  --c-primary-hover: #E85800;
+  --c-primary-soft: #FFF1E8;   /* light orange tint backgrounds */
+  --c-secondary: #03215C;      /* Dark navy blue — headings, dark sections */
+  --c-secondary-2: #0644BD;    /* brighter blue for gradients */
+  --c-secondary-soft: #EAF0FB;
+
+  /* Neutrals */
+  --c-bg: #FFFFFF;
+  --c-bg-alt: #F7F7F7;
+  --c-border: #E5E5E5;
+  --c-border-strong: #D5D5D5;
+  --c-text: #120902;
+  --c-text-muted: #737373;
+  --c-white: #FFFFFF;
+
+  /* Text on dark (navy) sections */
+  --c-on-dark: #FFFFFF;
+  --c-on-dark-muted: rgba(255, 255, 255, 0.68);
+
+  /* Gradients */
+  --g-brand: linear-gradient(135deg, var(--c-primary) 0%, #FF9F64 100%);
+  --g-navy: linear-gradient(135deg, var(--c-secondary) 0%, var(--c-secondary-2) 100%);
+  --g-sunset: linear-gradient(120deg, var(--c-primary) 0%, #FF9F64 45%, var(--c-secondary-2) 100%);
+
+  /* Effects */
+  --shadow-sm: 0 2px 8px rgba(3, 33, 92, 0.06);
+  --shadow-md: 0 12px 32px rgba(3, 33, 92, 0.10);
+  --shadow-lg: 0 30px 70px rgba(3, 33, 92, 0.16);
+  --shadow-glow: 0 18px 50px rgba(255, 97, 1, 0.35);
+
+  /* Shape */
+  --radius-sm: 10px;
+  --radius-md: 18px;
+  --radius-lg: 28px;
+  --radius-pill: 999px;
+}

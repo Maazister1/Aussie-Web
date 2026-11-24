@@ -1,0 +1,55 @@
+/* =========================================================
+   AUSSIEWEB — FONTS ONLY
+   To change fonts, edit only this file.
+
+   MAIN FONT: Neue Haas Grotesk Display 45 Light (paid font).
+   Until you add it, "Inter Tight" (free, closest match) is used
+   automatically, so the site never breaks.
+
+   Option A, Adobe Fonts (included with Creative Cloud):
+     fonts.adobe.com > search "Neue Haas Grotesk Display" >
+     "Add to Web Project". Then edit LINE A below: put your kit ID
+     in place of YOUR-KIT-ID and delete the two slashes at the start.
+
+   Option B, bought web licence (MyFonts / Monotype):
+     put NeueHaasDisplay-Light.woff2 and NeueHaasDisplay-Medium.woff2
+     in a /fonts folder, then delete the comment marks around
+     the BLOCK B @font-face rules further down.
+   ========================================================= */
+
+/* LINE A (Adobe Fonts) — must stay above everything else: */
+/* @import url('https://use.typekit.net/YOUR-KIT-ID.css'); */
+
+/* Free fallback + accent fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* BLOCK B (self-hosted licence) — start
+@font-face {
+  font-family: 'Neue Haas Grotesk Display';
+  src: url('../fonts/NeueHaasDisplay-Light.woff2') format('woff2');
+  font-weight: 300; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Neue Haas Grotesk Display';
+  src: url('../fonts/NeueHaasDisplay-Medium.woff2') format('woff2');
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+BLOCK B — end */
+
+:root {
+  /* Big headings (Neue Haas Grotesk Display 45 Light) */
+  --font-display: 'neue-haas-grotesk-display', 'Neue Haas Grotesk Display Pro', 'Neue Haas Grotesk Display', 'Inter Tight', 'Helvetica Neue', Arial, sans-serif;
+  --fw-display: 300;   /* 300 = "45 Light". 500 = Medium, 700 = Bold */
+
+  /* Body text, buttons, menus */
+  --font-sans: 'neue-haas-grotesk-display', 'Neue Haas Grotesk Display Pro', 'Neue Haas Grotesk Display', 'Inter Tight', 'Helvetica Neue', Arial, sans-serif;
+
+  /* Orange accent words in headings (e.g. "sell like hotcakes.") and the "web" in the logo.
+     Same font as headings, but bold. */
+  --font-accent: var(--font-display);
+  --fw-accent: 700;    /* 600 = Semibold, 800 = Extra bold */
+  --fs-accent: normal; /* set to italic if you want slanted accent words */
+
+  --font-serif: 'Instrument Serif', Georgia, serif;          /* (spare, not used now) */
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;    /* small labels */
+}
